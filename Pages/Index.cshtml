@@ -1,0 +1,65 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="grid-container">
+    <div class="grid-item" id="label-bar">
+        <label id="last"/>
+    </div>
+    <div class="grid-item" id="number-bar">
+        <input id="input" />
+    </div>
+    <div class="grid-item" id="null">
+        <button onclick="Clear()">C</button>
+    </div>
+    <div class="grid-item" id="divide">
+        <button onclick="AddDivide()">÷</button>
+    </div>
+    <div class="grid-item" id="multiply">
+        <button onclick="AddMuliply()">×</button>
+    </div>
+    <div class="grid-item" id="minus">
+        <button onclick="AddMinus()">-</button>
+    </div>
+    <div class="grid-item" id="seven">
+        <button onclick="AddSeven()">7</button>
+    </div>
+    <div class="grid-item" id="eight">
+        <button onclick="AddEight()">8</button>
+    </div>
+    <div class="grid-item" id="nine">
+        <button onclick="AddNine()">9</button>
+    </div>
+    <div class="grid-item" id="four">
+        <button onclick="AddFour()">4</button>
+    </div>
+    <div class="grid-item" id="five">
+        <button onclick="AddFive()">5</button>
+    </div>
+    <div class="grid-item" id="six">
+        <button onclick="AddSix()">6</button>
+    </div>
+    <div class="grid-item" id="plus">
+        <button onclick="AddPlus()">+</button>
+    </div>
+    <div class="grid-item" id="one">
+        <button onclick="AddOne()">1</button>
+    </div>
+    <div class="grid-item" id="two">
+        <button onclick="AddTwo()">2</button>
+    </div>
+    <div class="grid-item" id="three">
+        <button onclick="AddThree()">3</button>
+    </div>
+    <div class="grid-item" id="zero">
+        <button onclick="AddZero()">0</button>
+    </div>
+    <div class="grid-item" id="dot">
+        <button onclick="AddDot()">.</button>
+    </div>
+    <div class="grid-item" id="equals">
+        <button onclick="Equals()">=</button>
+    </div>
+</div>
