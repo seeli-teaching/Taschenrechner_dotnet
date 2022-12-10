@@ -3,10 +3,12 @@
 
 // Write your JavaScript code.
 
+// Setzt den Wert des Taschenrechners auf 0 beim Laden der Webseite
 function Onload() {
     document.getElementById("input").value = "0";
 }
 
+// Setzt die Werte, jenachdem auf welche Zahlen oder Operatoren gedrückt werden
 function AddZero() {
     if (document.getElementById("input").value == "0")
         document.getElementById("input").value = "0";
@@ -106,11 +108,14 @@ function AddDot() {
         document.getElementById("input").value += ".";
 }
 
+// Setzt den Taschenrecher wieder auf Null
 function Clear() {
     if (document.getElementById("input").value != "0")
         document.getElementById("input").value = "0";
 }
 
+
+// Berechnet den Input und gibt den Wert aus
 function Equals() {
     let inputArray;
     let Operator;
