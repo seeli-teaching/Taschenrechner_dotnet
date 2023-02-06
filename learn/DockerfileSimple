@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/dotnet/sdk:6.0
+WORKDIR /src
+
+COPY ["Taschenrechner_Modul347.csproj", "."]
+RUN dotnet restore "./Taschenrechner_Modul347.csproj"
+
+COPY . .
+
+EXPOSE 80
+EXPOSE 443
+
+CMD ["dotnet", "run", "Taschenrechner_Modul347.csproj"]
