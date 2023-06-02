@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/dotnet/sdk:6.0
+WORKDIR /src
+
+COPY ["Taschenrechner.csproj", "."]
+RUN dotnet restore "./Taschenrechner.csproj"
+
+COPY . .
+
+EXPOSE 80
+
+CMD ["dotnet", "run", "Taschenrechner.csproj"]
