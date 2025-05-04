@@ -16,4 +16,8 @@ RUN dotnet publish "Taschenrechner.csproj" -c Release -o /app/publish /p:UseAppH
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+EXPOSE 5000 
+ENV ASPNETCORE_URLS=http://+:5000
+
 ENTRYPOINT ["dotnet", "Taschenrechner.dll"]

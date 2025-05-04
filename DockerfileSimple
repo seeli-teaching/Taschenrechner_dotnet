@@ -6,6 +6,7 @@ RUN dotnet restore "./Taschenrechner.csproj"
 
 COPY . .
 
-EXPOSE 80
+EXPOSE 5000 
+ENV ASPNETCORE_URLS=http://+:5000
 
 CMD ["dotnet", "run", "Taschenrechner.csproj"]
